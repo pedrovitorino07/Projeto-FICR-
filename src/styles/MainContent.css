@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.Main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+h2 {
+  margin-top: 5%;
+  margin-bottom: 60px;
+}
+
+.botao {
+  color: white;
+  background-color: #5375e5;
+  height: 91px;
+  width: 193px;
+  border-radius: 8px;
+  margin: 40px 0;
+}
+
+.carrossel {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+  gap: 20px;
+}
+
+.elementos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: #5375e5;
+  height: 200px;
+  width: 200px;
+  border-radius: 8px;
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 50px;
+  flex-shrink: 0;
+  flex-grow: 1; /* Mantém a largura uniforme */
+  max-width: 200px; /* Limita a largura máxima */
+}
+
+.elementos img {
+  height: 60px;
+  width: auto;
+}
+
+/* Ajustes responsivos */
+@media (max-width: 768px) {
+  .carrossel {
+    justify-content: center;
+  }
+
+  .elementos {
+    width: 45%;
+    max-width: 200px; /* Limita a largura máxima para manter o tamanho uniforme */
+    height: 200px; /* Altura fixa */
+    padding: 15px;
+  }
+
+  .botao {
+    width: 80%;
+    max-width: 250px;
+  }
+
+  h2 {
+    font-size: 1.5em;
+    margin-top: 10%;
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  h2 {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+  }
+
+  .botao {
+    height: 60px;
+    font-size: 0.9em;
+  }
+
+  .elementos {
+    width: 100%;
+    max-width: 200px; /* Limita a largura máxima em dispositivos menores */
+    height: 200px;
+    padding: 10px;
+  }
+}
