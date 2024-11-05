@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 
 * {
   padding: 0;
@@ -16,28 +16,36 @@ a {
   flex-direction: column;
   align-items: center;
   padding: 20px;
+  height: 600px;
 }
 
 h2 {
-  margin-top: 5%;
-  margin-bottom: 60px;
+  margin: 5% 0 40px;
+  font-size: 1.8em;
+  text-align: center;
 }
 
 .botao {
   color: white;
   background-color: #5375e5;
-  height: 91px;
-  width: 193px;
+  height: 100px;
+  width: 200px;
   border-radius: 8px;
-  margin: 40px 0;
+  margin: 30px 0;
+  font-size: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 8%;
 }
 
 .carrossel {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   gap: 20px;
+  width: 100%;
+  max-width: 1200px;
+  margin-top: 20px;
 }
 
 .elementos {
@@ -47,62 +55,59 @@ h2 {
   align-items: center;
   color: white;
   background-color: #5375e5;
-  height: 200px;
-  width: 200px;
+  height: 180px;
   border-radius: 8px;
   text-align: center;
   padding: 20px;
-  margin-bottom: 50px;
-  flex-shrink: 0;
-  flex-grow: 1; /* Mantém a largura uniforme */
-  max-width: 200px; /* Limita a largura máxima */
 }
 
 .elementos img {
-  height: 60px;
-  width: auto;
+  height: 50px;
+  margin-bottom: 10px;
 }
 
-/* Ajustes responsivos */
+/* Responsividade para telas médias */
 @media (max-width: 768px) {
-  .carrossel {
-    justify-content: center;
+  .botao {
+    width: 60%;
+    max-width: 200px;
+    height: 50px;
+  }
+
+  h2 {
+    font-size: 1.6em;
+    margin-bottom: 30px;
   }
 
   .elementos {
-    width: 45%;
-    max-width: 200px; /* Limita a largura máxima para manter o tamanho uniforme */
-    height: 200px; /* Altura fixa */
+    height: 160px;
     padding: 15px;
   }
 
-  .botao {
-    width: 80%;
-    max-width: 250px;
-  }
-
-  h2 {
-    font-size: 1.5em;
-    margin-top: 10%;
-    margin-bottom: 40px;
+  .elementos img {
+    height: 45px;
   }
 }
 
+/* Responsividade para telas pequenas */
 @media (max-width: 480px) {
+  .botao {
+    width: 70%;
+    font-size: 0.9em;
+    height: 45px;
+  }
+
   h2 {
-    font-size: 1.2em;
+    font-size: 1.4em;
     margin-bottom: 20px;
   }
 
-  .botao {
-    height: 60px;
-    font-size: 0.9em;
+  .elementos {
+    height: 150px;
+    padding: 10px;
   }
 
-  .elementos {
-    width: 100%;
-    max-width: 200px; /* Limita a largura máxima em dispositivos menores */
-    height: 200px;
-    padding: 10px;
+  .elementos img {
+    height: 40px;
   }
 }

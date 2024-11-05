@@ -1,15 +1,18 @@
-import Footer from "../components/Footer"
-import Header from "../components/Header"
-import MainEvent from "../components/MainEvent"
+import Footer from "../components/Footer";
+import Header from "../components/Header";
+import MainEvent from "../components/MainEvent";
+import "../styles/layout.css";
 
 export const ListagemEventos = () => {
-    return (
+  return (
+    <div className="layout">
+      <Header />
+      <div className="content">
+        <MainEvent />
+      </div>
+      <Footer />
+    </div>
+  );
+};
 
-        <div>
-            <Header />
-            <MainEvent />
-            <Footer />
-        </div>
-
-    )
-}
+export default ListagemEventos;

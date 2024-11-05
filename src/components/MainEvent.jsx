@@ -1,6 +1,7 @@
 import "../styles/MainEvent.css";
 import Lixeira from "../assets/thrash.png";
 import Lapis from "../assets/pencil.png";
+import Eye from "../assets/eye.png";
 import { useEffect, useState } from "react";
 import { getEvents, deleteEvent } from "../services/eventService";
 import { Link } from "react-router-dom";
@@ -65,7 +66,7 @@ function MainEvent() {
                   scheduling: event.scheduling,
                 }}
               >
-                <img src={Lapis} alt="Editar" />
+                <img src={Eye} alt="Editar" />
               </Link>
             </span>
             <span className="celula">

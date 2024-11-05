@@ -11,7 +11,7 @@
   height: 76px;
   display: flex;
   align-items: center;
-  justify-content: center; /* Centraliza o conteúdo no desktop inicialmente */
+  justify-content: center;
   padding: 0 20px;
 }
 
@@ -21,16 +21,15 @@
   margin: 0;
 }
 
-/* Responsividade para telas menores */
 @media (max-width: 768px) {
   .footer {
     flex-direction: column;
-    height: auto; /* Permite ajuste da altura com base no conteúdo */
+    height: auto;
     padding: 10px 20px;
     text-align: center;
   }
 
   .footer p {
-    margin: 0; /* Remove qualquer margem extra */
+    margin: 0;
   }
 }
