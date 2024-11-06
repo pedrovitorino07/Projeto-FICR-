@@ -24,6 +24,9 @@ h1 {
   font-family: 'Poppins', sans-serif;
   font-size: 1.5em;
   color: white;
+  margin-right: 300px;
+  width: 200px;
+  margin-top: 15px;
 }
 
 .botao-cabecalho {
