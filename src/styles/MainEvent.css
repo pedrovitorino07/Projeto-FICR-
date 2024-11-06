@@ -10,8 +10,8 @@
 
 .tabela {
     display: table;
-    width: 90vw; /* Ajuste para 90vw em telas pequenas */
-    max-width: 70vw; /* Limite em telas grandes */
+    width: 90vw; 
+    max-width: 70vw; 
     box-shadow: 0px 0px 10px 10px #5375e594;
     border-radius: 20px;
     margin-bottom: 10vh;
@@ -67,7 +67,6 @@ span img:hover {
     transition: 2s;
 }
 
-/* Responsividade para telas menores */
 @media (max-width: 768px) {
     .tabela {
         width: 90vw;
@@ -90,7 +89,6 @@ span img:hover {
     }
 }
 
-/* Responsividade para telas muito pequenas */
 @media (max-width: 480px) {
     .tabela {
         width: 100vw;
@@ -100,7 +98,7 @@ span img:hover {
 
     .celula {
         padding: 5px;
-        font-size: 14px; /* Reduz o texto para caber em telas menores */
+        font-size: 14px; 
     }
 
     .event-image {

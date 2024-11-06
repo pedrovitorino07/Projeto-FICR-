@@ -14,7 +14,7 @@ form {
   display: flex;
   flex-direction: column;
   width: 700px;
-  max-width: 90%; /* Permite que o formulário seja menor em telas menores */
+  max-width: 90%;
 }
 
 h1 {
@@ -64,7 +64,6 @@ textarea {
   background-color: #45a049;
 }
 
-/* Estilos Responsivos */
 @media (max-width: 768px) {
   form {
     width: 100%;

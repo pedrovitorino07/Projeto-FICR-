@@ -66,7 +66,6 @@ h2 {
   margin-bottom: 10px;
 }
 
-/* Responsividade para telas médias */
 @media (max-width: 768px) {
   .botao {
     width: 60%;
@@ -89,7 +88,6 @@ h2 {
   }
 }
 
-/* Responsividade para telas pequenas */
 @media (max-width: 480px) {
   .botao {
     width: 70%;
